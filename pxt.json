@@ -8,7 +8,6 @@
     "files": [
         "README.md",
         "sonar.ts",
-	"oledv1.ts",
         "_locales/zh/microbit_extend-string.json"
     ],
     "testFiles": [
