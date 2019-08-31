@@ -11,7 +11,7 @@ enum PingUnit {
  * Sonar and ping utilities
  */
 //% color="#2c3e50" weight=10 block="器件扩展"
-namespace microbit-extend {
+namespace microbit_extend{
     /**
      * Send a ping and get the echo time (in microseconds) as a result
      * @param trig tigger pin
