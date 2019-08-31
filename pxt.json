@@ -1,0 +1,19 @@
+{
+    "name": "外围器件扩展",
+    "version": "0.0.1",
+    "description": "Microbit外围器件扩展包",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "sonar.ts",
+	"_locals/zh/microbit-extend.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false,
+    "license": "GNU"
+}
