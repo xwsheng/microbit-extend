@@ -76,7 +76,7 @@ namespace microbit_extend {
      */
     //% weight=90
     //% blockId=OLEDV1_Clear
-    //% block="OLED:clear"
+    //% block="OLED clear"
     export function clear() {
         cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
