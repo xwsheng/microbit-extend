@@ -10,7 +10,7 @@ enum PingUnit {
 /**
  * 超声波测距
  */
- //% color="#2c3e50" weight=10 block="器件扩展" icon="\uf796"	//From http://fontawesome.io/icons/
+ //% color="#2c3e50" weight=10 block="器件扩展" icon="\uf085"	//From http://fontawesome.io/icons/
 namespace microbit_extend{
     /**
      * 在trig脚发送约10ms的高电平，等待在echo脚出现高电平时开始计时，返回时间或距离。
