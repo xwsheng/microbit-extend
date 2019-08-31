@@ -1,5 +1,5 @@
 // color="#AA278D"  icon="\uf062"
-namespace OLEDV1 {
+namespace microbit_extend {
     let i = 1;
     let j = 1;
     export function initDisplay(): void {
@@ -31,7 +31,6 @@ namespace OLEDV1 {
     //% weight=90
     //% blockId=OLEDV1_Clear
     //% block="OLEDV1:clear"
-    //% blockNamespace=microbit-extend
     export function clear() {
         cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
@@ -70,7 +69,6 @@ namespace OLEDV1 {
     //% text.defl="OLED V1"
 	//% line.min=0 line.max=7
     //% block="OLED show line %line|text %text"
-    //% blockNamespace=microbit-extend
     export function showUserText(line: number, text: string) {
         
         if (i == 1) {
@@ -93,7 +91,6 @@ namespace OLEDV1 {
     //% blockId=OLEDV1_Nunber
 	//% line.min=0 line.max=7
     //% block="OLED show line %line|number %n"
-    //% blockNamespace=microbit-extend
     export function showUserNumber(line: number, n: number) {
         
         if (j == 1&& i == 1) {
@@ -101,7 +98,7 @@ namespace OLEDV1 {
             j += 1;
         }
         
-        OLEDV1.showUserText(line, "" + n)
+        microbit_extend.showUserText(line, "" + n)
     }
 
 

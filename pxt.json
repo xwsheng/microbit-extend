@@ -15,5 +15,6 @@
         "test.ts"
     ],
     "public": false,
-    "license": "GNU"
+    "license": "GNU",
+    "preferredEditor": "tsprj"
 }
