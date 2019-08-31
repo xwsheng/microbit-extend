@@ -71,9 +71,12 @@ namespace microbit_extend {
         cmd(0xAF);  // Set display On
         clear();
     }
+	/**
+     * OLED 12864 清屏
+     */
     //% weight=90
     //% blockId=OLEDV1_Clear
-    //% block="OLEDV1:clear"
+    //% block="OLED:clear"
     export function clear() {
         cmd(DISPLAY_OFF);   //display off
         for (let j = 0; j < 8; j++) {
@@ -105,11 +108,11 @@ namespace microbit_extend {
         writeCustomChar(basicFont[c1 - 32]);
     }
     /**
-     * OLED 12864 display string
+     * OLED 12864 显示字符串
      */
     //% weight=90
     //% blockId=OLEDV1_Text
-    //% text.defl="OLED V1"
+    //% text.defl="OLED"
 	//% line.min=0 line.max=7
     //% block="OLED show line %line|text %text"
     export function showUserText(line: number, text: string) {
@@ -126,7 +129,7 @@ namespace microbit_extend {
 
     }
 	/**
-     * OLED 12864 shows the number
+     * OLED 12864 显示数字
      * @param line line num (8 pixels per line), eg: 0
      * @param n value , eg: 2019
      */
