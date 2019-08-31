@@ -3,8 +3,7 @@
     "version": "0.0.1",
     "description": "Microbit外围器件扩展包",
     "dependencies": {
-        "core": "*",
-        "radio": "*"
+        "core": "*"
     },
     "files": [
         "README.md",

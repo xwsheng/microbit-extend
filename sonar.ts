@@ -8,12 +8,12 @@ enum PingUnit {
 }
 
 /**
- * Sonar and ping utilities
+ * 超声波测距
  */
 //% color="#2c3e50" weight=10 block="器件扩展"
 namespace microbit_extend{
     /**
-     * Send a ping and get the echo time (in microseconds) as a result
+     * 在trig脚发送约10ms的高电平，等待在echo脚出现高电平时开始计时，返回时间或距离。
      * @param trig tigger pin
      * @param echo echo pin
      * @param unit desired conversion unit
@@ -21,15 +21,15 @@ namespace microbit_extend{
      */
     //% blockId=sonar_ping block="ping trig %trig|echo %echo|unit %unit"
     export function sonar_ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
-        // send pulse
+        // 发送脉冲
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
-        control.waitMicros(2);
+	control.waitMicros(2);		//2ms
         pins.digitalWritePin(trig, 1);
         control.waitMicros(10);
         pins.digitalWritePin(trig, 0);
 
-        // read pulse
+        // echo脚高电平持续时间,时间单位为us
         const d = pins.pulseIn(echo, PulseValue.High, maxCmDistance * 58);
 
         switch (unit) {
