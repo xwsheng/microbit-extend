@@ -9,7 +9,7 @@
     "files": [
         "README.md",
         "sonar.ts",
-	"_locals/zh/microbit-extend.json"
+	"_locales/zh/microbit-extend.json"
     ],
     "testFiles": [
         "test.ts"
