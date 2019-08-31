@@ -19,7 +19,7 @@ namespace microbit_extend{
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
-    //% blockId=sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+    //% blockId=sonar_ping block="超声波测距:|ping trig %trig|echo %echo|unit %unit"
     export function sonar_ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // 发送脉冲
         pins.setPull(trig, PinPullMode.PullNone);
