@@ -1,5 +1,5 @@
 {
-    "name": "外围器件扩展",
+    "name": "microbit-extend",
     "version": "0.0.1",
     "description": "Microbit外围器件扩展包",
     "dependencies": {
