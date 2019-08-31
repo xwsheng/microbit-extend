@@ -1,6 +1,3 @@
 {
-	"sonar.PingUnit.time|block": "时间(us)",
-	"sonar.PingUnit.dist_cm|block": "距离(cm)",
-	"sonar.PingUnit.dist_inchs|block": "距离(inches)",
 	"sonar.ping|block": "发送端口|%trig|接收端口|%echo|返回|%unit"
 }
