@@ -8,7 +8,7 @@
     "files": [
         "README.md",
         "sonar.ts",
-        "_locales/zh/microbit_extend-string.json
+        "_locales/zh/microbit_extend-string.json"
     ],
     "testFiles": [
         "test.ts"
